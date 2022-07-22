@@ -15,6 +15,8 @@ connectDb()
 const bootcamps = require('./routes/bootcamp')
 
 const app = express()
+// body parser
+app.use(express.json())
 
 // Dev logging middleware
 if (process.env.NODE_ENV === 'development') {
